@@ -1,0 +1,35 @@
+#home {
+  background-image: url('./pumpkin-facts-gettyimages-973913068.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#aniDiv {
+  background-image: url('./FFC_Logo_Full/1.svg');
+  background-size: 1.;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-duration: 100ms;
+}
+
+#aniDiv:hover {
+  animation: logoAni 1.5s;
+}
+
+@keyframes logoAni {
+  0% {
+    background-image: url('./FFC_Logo_Full/1.svg');
+  }
+  25% {
+    background-image: url('./FFC_Logo_Full/2.svg');
+  }
+  50% {
+    background-image: url('./FFC_Logo_Full/3.svg');
+  }
+  75% {
+    background-image: url('./FFC_Logo_Full/2.svg');
+  }
+  100% {
+    background-image: url('./FFC_Logo_Full/1.svg');
+  }
+}

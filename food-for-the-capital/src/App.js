@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Home from './components/home.js';
 import NavBar from './components/navbar.js';
 import About from './components/about.js'
+import GetInvolved from './components/getInvolved.js';
 
 function App() {
   const [isEnglish, setIsEnglish] = useState(true);
@@ -14,6 +15,7 @@ function App() {
       <NavBar isEnglish={isEnglish} changeLang={changeLang}/>
       <Home isEnglish={isEnglish}/> 
       <About />
+      <GetInvolved />
     </div>
   );
 }

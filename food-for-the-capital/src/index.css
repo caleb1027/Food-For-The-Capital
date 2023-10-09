@@ -9,12 +9,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
+  
   overflow-x: hidden;
 }
 
 #root {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 code {

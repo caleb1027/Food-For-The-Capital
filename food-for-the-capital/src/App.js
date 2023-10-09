@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Home from './components/home.js';
-import NavBar from './components/navbar.js'
+import NavBar from './components/navbar.js';
+import About from './components/about.js'
 
 function App() {
   const [isEnglish, setIsEnglish] = useState(true);
@@ -12,6 +13,7 @@ function App() {
     <div className="App bg-white">
       <NavBar isEnglish={isEnglish} changeLang={changeLang}/>
       <Home isEnglish={isEnglish}/> 
+      <About />
     </div>
   );
 }

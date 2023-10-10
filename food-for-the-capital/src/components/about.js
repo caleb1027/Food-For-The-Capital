@@ -1,7 +1,8 @@
 import React from 'react'; 
+import { useState } from 'react';
 import Counter from "./counter"; 
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import {
     Accordion,
     AccordionItem,
@@ -10,7 +11,7 @@ import {
     AccordionItemPanel,
 } from 'react-accessible-accordion';
 import logo from './styles/FFC_Logo_Full/1.svg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './styles/carousel.css'
 
 const About = props => { 
     return( 
@@ -59,16 +60,27 @@ const History = props => {
     ) 
 } 
 const Awards = props => { 
+    const [expand1, setExpand1] = useState(false);
+    let changeExpand1 = () => {
+        setExpand1(!expand1)
+    }
+
+    const [expand2, setExpand2] = useState(false);
+    let changeExpand2 = () => {
+        setExpand2(!expand2)
+    }
+
     return(
-        <div className='flex-col flex items-center py-12 bg-yellow-50'>
-            <h1 className='text-5xl font-bold m-8'>
+        <div className='flex-col flex items-center py-8 bg-yellow-50'>
+            <h1 className='text-5xl font-bold py-8'>
             Awards
         </h1>
-        <Accordion className='w-1/2' allowMultipleExpanded={true} allowZeroExpanded={true}>
-            <AccordionItem className='w-full text-left border-t-2 border-black'>
+        <Accordion className='w-1/2 pb-8' allowMultipleExpanded={true} allowZeroExpanded={true}>
+            <AccordionItem className='w-full text-left border-t-2 py-4 border-black'>
                 <AccordionItemHeading >
-                    <AccordionItemButton className='text-4xl  w-fill text-center h-16 flex-col flex align-middle items-center'>
+                    <AccordionItemButton onClick={changeExpand1} className='text-3xl  w-fill text-center h-16 flex-col flex align-middle items-center'>
                         <h1 className='py-4 text-center m-auto font-bold'>Example Award #1</h1>
+                        <i className={`fas ${expand1 ? 'fa-chevron-up' : 'fa-chevron-down'}`} />
                     </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel className='m-4'>
@@ -80,15 +92,15 @@ const Awards = props => {
                     </p>
                 </AccordionItemPanel>
             </AccordionItem>
-            <AccordionItem className='w-full text-left border-b-2 border-black'>
-                <AccordionItemHeading className='w-fulltext-center '>
-                    <AccordionItemButton className='text-4xl border-t-2 border-black text-center h-16 w-full flex-col flex align-middle items-center'>
-                    <h1 className='p-2 text-center m-auto font-bold'>Example Award #2</h1>
-                    <FontAwesomeIcon icon="fa-solid fa-chevron-down" />
+            <AccordionItem className='w-full text-left border-t-2 border-b-2 py-4 border-black'>
+                <AccordionItemHeading >
+                    <AccordionItemButton onClick={changeExpand2} className='text-3xl  w-fill text-center h-16 flex-col flex align-middle items-center'>
+                        <h1 className='py-4 text-center m-auto font-bold'>Example Award #2</h1>
+                        <i className={`fas ${expand2 ? 'fa-chevron-up' : 'fa-chevron-down'}`} />
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <p className='p-4'>
+                <AccordionItemPanel className='m-4'>
+                    <p>
                         Exercitation in fugiat est ut ad ea cupidatat ut in
                         cupidatat occaecat ut occaecat consequat est minim minim
                         esse tempor laborum consequat esse adipisicing eu
@@ -103,7 +115,7 @@ const Awards = props => {
 
 const Partners = props => { 
     return( 
-    <div className='flex-col flex items-center mt-20'> 
+    <div className='flex-col flex items-center mt-12'> 
     <h1 className='text-5xl font-bold m-8'>
             Our Partners
         </h1>
@@ -113,21 +125,52 @@ const Partners = props => {
 } 
 
 function PartnerCarousel() {
+    const responsive = {
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 3,
+          slidesToSlide: 1 // optional, default to 1.
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 2,
+          slidesToSlide: 1 // optional, default to 1.
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1,
+          slidesToSlide: 1 // optional, default to 1.
+        }
+      };
     return (
-        <Carousel className='w-1/2' showThumbs={false} dynamicHeight={false}>
-        <div className=''>
-            <img src={logo} className='h-full w-full'/>
-            <p className="legend">Legend 1</p>
+        <div className='h-full w-full flex flex-col items-center'>
+        <Carousel className='h-2/3 w-2/3'
+            responsive={responsive}
+            showDots={true}
+            renderDotsOutside={true}
+            >
+            <div>
+                <img src={logo} className='scale-125' />
+                <h1 className='text-center text-2xl font-bold'>Logo 1</h1>
+            </div>
+            <div>
+                <img src={logo} className='scale-125'/>
+                <h1 className='text-center text-2xl font-bold'>Logo 2</h1>
+            </div>
+            <div>
+                <img src={logo} className='scale-125'/>
+                <h1 className='text-center text-2xl font-bold'>Logo 3</h1>
+            </div>
+            <div>
+                <img src={logo} className='scale-125'/>
+                <h1 className='text-center text-2xl font-bold'>Logo 4</h1>
+            </div>
+            <div>
+                <img src={logo} className='scale-125'/>
+                <h1 className='text-center text-2xl font-bold'>Logo 5</h1>
+            </div>
+        </Carousel>
         </div>
-        <div>
-            <img src={logo} />
-            <p className="legend">Legend 2</p>
-        </div>
-        <div>
-            <img src={logo} />
-            <p className="legend">Legend 3</p>
-        </div>
-    </Carousel>
     );
   }
 

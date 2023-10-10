@@ -9,11 +9,10 @@ const NavBar = props => {
                 <img src={logo} className=' scale-150 w-16 h-16 hover:translate-y-1 duration-100'>
                 </img>
             </a>
-            <a class="text-amber-600 hover:text-amber-800 font-bold ml-8 text-lg" href="#about">{props.isEnglish ? "About" : "French"}</a>
-            <a class="text-amber-600 hover:text-amber-800 font-bold ml-8 text-lg" href="#">{props.isEnglish ? "News" : "French"}</a>
-            <a class="text-amber-600 hover:text-amber-800 font-bold ml-8 text-lg" href="#">{props.isEnglish ? "Get Involved" : "French"}</a>
-            <a class="text-amber-600 hover:text-amber-800 font-bold ml-8 text-lg" href="#">{props.isEnglish ? "Donate" : "French"}</a>
-            <a class="text-amber-600 hover:text-amber-800 font-bold ml-8 text-lg" href="#">{props.isEnglish ? "Contact" : "French"}</a>
+            <a class="text-amber-600 hover:text-amber-800 font-bold ml-8 text-lg duration-100" href="#about">{props.isEnglish ? "About" : "French"}</a>
+            <a class="text-amber-600 hover:text-amber-800 font-bold ml-8 text-lg duration-100" href="#getInvolved">{props.isEnglish ? "Get Involved" : "French"}</a>
+            <a class="text-amber-600 hover:text-amber-800 font-bold ml-8 text-lg duration-100" href="#">{props.isEnglish ? "Donate" : "French"}</a>
+            <a class="text-amber-600 hover:text-amber-800 font-bold ml-8 text-lg duration-100" href="#">{props.isEnglish ? "Contact" : "French"}</a>
             </div>
             <div className='flex flex-row items-center mx-10'>
                 <button onClick={props.changeLang} className='float-right text-amber-700 hover:text-amber-800 font-bold text-lg'>

@@ -3,6 +3,7 @@ import Home from './components/home.js';
 import NavBar from './components/navbar.js';
 import About from './components/about.js'
 import GetInvolved from './components/getInvolved.js';
+import Contact from './components/contact.js';
 
 function App() {
   const [isEnglish, setIsEnglish] = useState(true);
@@ -16,6 +17,7 @@ function App() {
       <Home isEnglish={isEnglish}/> 
       <About />
       <GetInvolved />
+      <Contact />
     </div>
   );
 }

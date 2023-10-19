@@ -11,8 +11,8 @@ const NavBar = props => {
             </a>
             <a class="text-amber-600 hover:text-amber-800 font-bold ml-8 text-lg duration-100" href="#about">{props.isEnglish ? "About" : "French"}</a>
             <a class="text-amber-600 hover:text-amber-800 font-bold ml-8 text-lg duration-100" href="#getInvolved">{props.isEnglish ? "Get Involved" : "French"}</a>
-            <a class="text-amber-600 hover:text-amber-800 font-bold ml-8 text-lg duration-100" href="#">{props.isEnglish ? "Donate" : "French"}</a>
-            <a class="text-amber-600 hover:text-amber-800 font-bold ml-8 text-lg duration-100" href="#">{props.isEnglish ? "Contact" : "French"}</a>
+            <a class="text-amber-600 hover:text-amber-800 font-bold ml-8 text-lg duration-100" href="#getInvolved">{props.isEnglish ? "Donate" : "French"}</a>
+            <a class="text-amber-600 hover:text-amber-800 font-bold ml-8 text-lg duration-100" href="#contact">{props.isEnglish ? "Contact" : "French"}</a>
             </div>
             <div className='flex flex-row items-center mx-10'>
                 <button onClick={props.changeLang} className='float-right text-amber-700 hover:text-amber-800 font-bold text-lg'>

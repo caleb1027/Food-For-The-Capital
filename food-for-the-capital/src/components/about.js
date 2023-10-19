@@ -12,6 +12,10 @@ import {
 } from 'react-accessible-accordion';
 import logo from './styles/FFC_Logo_Full/1.svg'
 import './styles/carousel.css'
+import bfc from './styles/BFC.jpg'
+import ofb from './styles/OFB.jpg'
+import kfc from './styles/KFC.png'
+import sgh from './styles/SGH.png'
 
 const About = props => { 
     return( 
@@ -19,9 +23,7 @@ const About = props => {
         <Impact />
             <History />
             <Awards />
-            <Partners />
-
-        
+            <Partners />     
     </div> 
     ) 
 }
@@ -149,25 +151,21 @@ function PartnerCarousel() {
             showDots={true}
             renderDotsOutside={true}
             >
-            <div>
-                <img src={logo} className='scale-125' />
-                <h1 className='text-center text-2xl font-bold'>Logo 1</h1>
+            <div className='h-fit flex-col flex align-middle items-center'>
+                <img src={bfc} className='h-64 w-fit scale-75' />
+                <h1 className='text-center text-2xl font-bold w-64'>Barrhaven Food Cupboard</h1>
             </div>
-            <div>
-                <img src={logo} className='scale-125'/>
-                <h1 className='text-center text-2xl font-bold'>Logo 2</h1>
+            <div className='h-fit flex-col flex align-middle items-center'>
+                <img src={kfc} className='h-64 w-fit scale-75'/>
+                <h1 className='text-center text-2xl font-bold w-64'>Kanata Food Cupboard</h1>
             </div>
-            <div>
-                <img src={logo} className='scale-125'/>
-                <h1 className='text-center text-2xl font-bold'>Logo 3</h1>
+            <div className='h-fit flex-col flex align-middle items-center'>
+                <img src={ofb} className='h-64 w-fit scale-75'/>
+                <h1 className='text-center text-2xl font-bold w-64'>Ottawa Food Bank</h1>
             </div>
-            <div>
-                <img src={logo} className='scale-125'/>
-                <h1 className='text-center text-2xl font-bold'>Logo 4</h1>
-            </div>
-            <div>
-                <img src={logo} className='scale-125'/>
-                <h1 className='text-center text-2xl font-bold'>Logo 5</h1>
+            <div className='h-fit flex-col flex align-middle items-center'>
+                <img src={sgh} className='h-64 w-fit scale-75'/>
+                <h1 className='text-center text-2xl font-bold w-64'>Shepherds of Good Hope</h1>
             </div>
         </Carousel>
         </div>

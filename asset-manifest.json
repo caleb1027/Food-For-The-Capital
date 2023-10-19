@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/food-for-the-capital/static/css/main.05458e50.css",
+    "main.js": "/food-for-the-capital/static/js/main.f0ddabca.js",
+    "static/media/pumpkin-facts-gettyimages-973913068.jpg": "/food-for-the-capital/static/media/pumpkin-facts-gettyimages-973913068.b055cf83205f18439d1d.jpg",
+    "static/media/1.svg": "/food-for-the-capital/static/media/1.75a1577e9b474d28b029efb3f36e7026.svg",
+    "static/media/2.svg": "/food-for-the-capital/static/media/2.9107874f1d1c9694ca54.svg",
+    "static/media/3.svg": "/food-for-the-capital/static/media/3.98194c8f2d9998ec81f0.svg",
+    "static/media/OFB.jpg": "/food-for-the-capital/static/media/OFB.b8953d9a6fde45f8db4d.jpg",
+    "static/media/KFC.png": "/food-for-the-capital/static/media/KFC.0a1573a4adb418a394a3.png",
+    "static/media/SGH.png": "/food-for-the-capital/static/media/SGH.e838c1c384e45f5b720f.png",
+    "static/media/BFC.jpg": "/food-for-the-capital/static/media/BFC.a50b839a264df2467050.jpg",
+    "static/media/plane.png": "/food-for-the-capital/static/media/plane.b57d6cb4b6cd9b0c0087.png",
+    "static/media/revicons.eot": "/food-for-the-capital/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/food-for-the-capital/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/food-for-the-capital/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/food-for-the-capital/index.html",
+    "main.05458e50.css.map": "/food-for-the-capital/static/css/main.05458e50.css.map",
+    "main.f0ddabca.js.map": "/food-for-the-capital/static/js/main.f0ddabca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05458e50.css",
+    "static/js/main.f0ddabca.js"
+  ]
+}

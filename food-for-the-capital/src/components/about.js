@@ -19,7 +19,7 @@ import sgh from './styles/SGH.png'
 
 const About = props => { 
     return( 
-    <div id='about' className='h-fit'>
+    <div id='about' className='w-screen h-fit'>
         <Impact />
             <History />
             <Awards />

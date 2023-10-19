@@ -12,7 +12,7 @@ function App() {
     setIsEnglish(!isEnglish)
   }
   return (
-    <div className="App bg-white">
+    <div className="App bg-white h-screen">
       <NavBar isEnglish={isEnglish} changeLang={changeLang}/>
       <Home isEnglish={isEnglish}/> 
       <About />

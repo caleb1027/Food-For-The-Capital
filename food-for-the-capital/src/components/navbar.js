@@ -3,7 +3,7 @@ import logo from './styles/FFC_Logo_Full/1.svg'
 
 const NavBar = props => {
     return(
-        <div className="z-40 sticky top-0 py-2 bg-white overflow-hidden flex flex-row justify-between" id="navbar">
+        <div className=" z-40 fixed top-0 py-2 bg-white overflow-hidden flex flex-row justify-between w-screen" id="navbar">
             <div className='flex flex-row items-center'>
             <a class="text-amber-700  font-bold ml-8 text-lg" href="#home">
                 <img src={logo} className=' scale-150 w-16 h-16 hover:translate-y-1 duration-100'>

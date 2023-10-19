@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const GetInvolved = props => {
     return (
-        <div id='getInvolved' className='flex-col flex items-center mt-20 bg-orange-100'>
+        <div id='getInvolved' className='w-screen flex-col flex items-center mt-20 bg-orange-100'>
             <h1 className='text-6xl font-bold m-8'>
             Get Involved
             </h1>

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Food-For-The-Capital/static/css/main.896e45b3.css",
-    "main.js": "/Food-For-The-Capital/static/js/main.e49a16b4.js",
+    "main.css": "/Food-For-The-Capital/static/css/main.747c038e.css",
+    "main.js": "/Food-For-The-Capital/static/js/main.0bacdbdf.js",
     "static/media/pumpkin-facts-gettyimages-973913068.jpg": "/Food-For-The-Capital/static/media/pumpkin-facts-gettyimages-973913068.b055cf83205f18439d1d.jpg",
     "static/media/1.svg": "/Food-For-The-Capital/static/media/1.75a1577e9b474d28b029efb3f36e7026.svg",
     "static/media/2.svg": "/Food-For-The-Capital/static/media/2.9107874f1d1c9694ca54.svg",
@@ -15,11 +15,11 @@
     "static/media/revicons.ttf": "/Food-For-The-Capital/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/Food-For-The-Capital/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/Food-For-The-Capital/index.html",
-    "main.896e45b3.css.map": "/Food-For-The-Capital/static/css/main.896e45b3.css.map",
-    "main.e49a16b4.js.map": "/Food-For-The-Capital/static/js/main.e49a16b4.js.map"
+    "main.747c038e.css.map": "/Food-For-The-Capital/static/css/main.747c038e.css.map",
+    "main.0bacdbdf.js.map": "/Food-For-The-Capital/static/js/main.0bacdbdf.js.map"
   },
   "entrypoints": [
-    "static/css/main.896e45b3.css",
-    "static/js/main.e49a16b4.js"
+    "static/css/main.747c038e.css",
+    "static/js/main.0bacdbdf.js"
   ]
 }
